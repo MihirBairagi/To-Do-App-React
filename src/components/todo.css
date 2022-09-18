@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* head css */
+
+.head-container{
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head-container h1 {
+    width: 70%;
+    font-size: 28px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+/* task list css */
+
+.list-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.list-inner-container{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 40%;
+    margin: 10px 0;
+    margin-bottom: 21px;
+    
+
+}
+
+.checkbox{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label {
+    color: black;
+    text-decoration: line-through;
+}
+
+.task-box{
+    cursor: pointer ;
+    display: flex;
+   
+}
+.task-box p {
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 5px;
+   
+   
+}
+.task-box:hover{
+    background-color: rgb(222, 219, 219);
+    border-radius: 5px;
+}
+
+ .btn{
+    background-color: rgb(222, 219, 219);
+    padding: 6px 9px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+ }
+
+.btn:hover {
+    background-color: rgb(190, 190, 190);
+} 
+
+
+/* input  css*/
+
+.input-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(210, 210, 210);
+    margin: 0 auto;
+    
+}
+.inner-input-container{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 58%;
+    margin: 30px 0;
+
+}
+
+.text{
+    width: 72%;
+}
+
+.text input {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid rgb(220, 219, 219);
+    border-radius: 5px;
+}
+
+.btn-2{
+    width: 23%;
+    background-color: #17a1f1;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    background-color: #007bff;
+}
+
+.no-task{
+    text-align: center;
+    margin: 30px 0 27px 0;
+    color: rgb(172, 171, 171);
+}
+
+/* media query  */
+
+@media only screen and (max-width: 1024px) {
+   .input-container, .head-container h1{
+    width: 100%;
+   }
+   .list-inner-container, .inner-input-container{
+    width: 90%;
+   }
+   .btn-2{
+    font-size: 11px;
+    width: 20%;
+   }
+
+  }
